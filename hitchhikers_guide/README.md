@@ -2,10 +2,10 @@
 > tbd
 
 # Pre-Processing and Pre-Delta
-Head on over to [notebooks/pre-processing/README.md](./notebooks/pre-processing/README.md) to learn how to process CSV data from the `./datasets/` directory.
+Head on over to [notebooks/pre-processing/README.md](./notebooks/pre-processing/README.md) to learn how to process CSV data from the `./datasets/` directory, and convert the `ecomm_behavior_data` into parquet data. This will simplify the conversion of the dataset into the Delta Lake table we'll be using for the exercises.
 
 # First-Steps with Delta Lake
-If you want to dive into using Delta Lake, head on over to [notebooks/first-steps/README.md](./notebooks/first-steps/README.md) to get started on your journey to Delta Lake awesomeness.
+If you want to dive into using Delta Lake, head on over to [notebooks/first-steps/README.md](./notebooks/first-steps/README.md) to get started on your journey to Delta Lake awesomeness. You can use the small dataset located in `datasets/ecomm_behavior_data/parquet/sm/` or download the large dataset (follow the instructions from [notebooks/pre-processing/README.md](./notebooks/pre-processing/README.md)).
 
 # Schema Validation and Evolution
 > TBD
