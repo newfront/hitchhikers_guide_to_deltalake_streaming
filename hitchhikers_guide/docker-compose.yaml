@@ -9,7 +9,7 @@ services:
     environment:
       - SPARK_LOCAL_HOSTNAME=localhost
     volumes:
-      - ${PWD}/notebooks:/opt/spark/work-dir/hitchhikers_guide
+      - ${PWD}:/opt/spark/work-dir/hitchhikers_guide
     ports:
       - 8888-8889:8888-8889
     restart: always
