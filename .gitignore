@@ -4,3 +4,8 @@ spark-warehouse/
 derby.log
 .DS_Store
 
+# ignore the large datasets if you have them locally
+hitchhikers_guide/datasets/ecomm_behavior_data/2019-Oct.csv
+hitchhikers_guide/datasets/ecomm_behavior_data/2019-Nov.csv
+hitchhikers_guide/datasets/ecomm_behavior_data/parquet/lg
+hitchhikers_guide/datasets/ecomm_behavior_data/delta/ecomm

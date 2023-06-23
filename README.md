@@ -5,7 +5,10 @@
 This is a collection (growing hopefully as time goes on) providing tips and tricks to ensure your experience building and maintaining **Streaming [Delta Lake](https://delta.io/)** applications (and the tables that power them) is absolutely joyful, even when the shit hits the fan :). Remember, when all else fails to take a deep breath, count to 5, and dig into the following content.
 
 ## Using the Guide
+Take a look at the outline provided in [/hitchhikers_guide/README.md](./hitchhikers_guide/README.md) to learn how to use the Guide in your Delta Lake streaming adventures.
 
+
+## Getting up and Running
 > Note: For x86_64 (linux/amd64) use the default docker-compose.yaml
 ~~~
 cd hitchhikers_guide && docker compose up
