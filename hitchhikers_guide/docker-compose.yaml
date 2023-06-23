@@ -12,4 +12,5 @@ services:
       - ${PWD}:/opt/spark/work-dir/hitchhikers_guide
     ports:
       - 8888-8889:8888-8889
+      - 4040:4040
     restart: always
