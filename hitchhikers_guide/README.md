@@ -12,3 +12,15 @@ If you want to dive into using Delta Lake, head on over to [notebooks/first-step
 
 # When Things Go Bump in the Night
 The collection of notebooks under `when-things-go-bump-in-the-night` are targeted towards fixing issues that pop-up at the worst times. This is the 3am style issues. Remember `Don't Panic`, take a deep breath, and remember the guide is here to help.
+
+> random note: 
+
+Get the core counts for your local machine. (if mac)
+```
+sysctl -a | grep machdep.cpu
+```
+
+linux
+```
+cat /proc/cpuinfo
+```

@@ -13,4 +13,12 @@ services:
     ports:
       - 8888-8889:8888-8889
       - 4040:4040
+    deploy:
+      resources:
+        limits:
+          cpus: '8'
+          memory: 32G
+        reservations:
+          cpus: '1'
+          memory: 16G
     restart: always
