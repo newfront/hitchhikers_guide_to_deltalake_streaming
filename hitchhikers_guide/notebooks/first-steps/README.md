@@ -6,4 +6,6 @@ For starters, if you are new to using Delta Lake, head over to [delta.io](https:
 
 1. [Streaming First Steps](./streaming-first-steps.ipynb) provides you with a simple journey. You'll learn to create a Delta Lake table using the `DeltaTable` python utility. Then we'll populate the table, and run our first streaming job. (I promise this will be a breeze!).
 
+2. After you've completed the `streaming-first-steps.ipynb`, then move onto part-2. [dl-streaming-101.ipynb](dl-streaming-101.ipynb). We will pick up where we left off and run our first streaming aggregation job.
+
 > Note: This is work in progress. Please open up an [Issue](https://github.com/newfront/hitchhikers_guide_to_deltalake_streaming/issues) if you find things that seem out of place. Just be nice.
