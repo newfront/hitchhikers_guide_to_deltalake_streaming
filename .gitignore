@@ -9,3 +9,6 @@ hitchhikers_guide/datasets/ecomm_behavior_data/2019-Oct.csv
 hitchhikers_guide/datasets/ecomm_behavior_data/2019-Nov.csv
 hitchhikers_guide/datasets/ecomm_behavior_data/parquet/lg
 hitchhikers_guide/datasets/ecomm_behavior_data/delta/ecomm
+
+# ignore the application directory since it is for application checkpoints
+hitchhikers_guide/applications/*
