@@ -13,3 +13,4 @@ Remember, **DON'T PANIC**, it *should be fine.
 2. How to minimize the fallout when things go exceptionally wrong. How communication - even async comms - build trust even when everything is on fire.
 3. Using Table Aliases, Replace, and Overwrite for good and profit.
 
+> Note: This is continous work in progress. Please open up an [Issue](https://github.com/newfront/hitchhikers_guide_to_deltalake_streaming/issues) if you find things that seem out of place. Just be nice.
