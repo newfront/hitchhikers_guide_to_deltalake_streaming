@@ -11,3 +11,5 @@ The `-sm.csv` is shipped along with this repository. If you want to just dip you
 * `2019-Nov.csv` contains 67,501,979 records
 
 > Note: You may experience `WARN MemoryManager: Total allocation exceeds 95.00% (1,020,054,720 bytes) of heap memory Scaling row group sizes to 95.00% for 8 writers` while working with the data. This is a preventitive measure to prevent the Spark application from crashing. The driver memory is 1GB by default. You can increase the amount of memory being allocated to the jupyter process to remove these warnings.
+
+> Note: This is continous work in progress. Please open up an [Issue](https://github.com/newfront/hitchhikers_guide_to_deltalake_streaming/issues) if you find things that seem out of place. Just be nice.

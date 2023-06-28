@@ -3,3 +3,5 @@ Remember. `Don't Panic`. Things will go wrong at the worst possible moments. Tha
 
 1. Fixing Corrupt Application Checkpoints
 ...
+
+> Note: This is continous work in progress. Please open up an [Issue](https://github.com/newfront/hitchhikers_guide_to_deltalake_streaming/issues) if you find things that seem out of place. Just be nice.
