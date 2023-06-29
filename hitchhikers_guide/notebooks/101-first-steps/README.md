@@ -8,4 +8,8 @@ For starters, if you are new to using Delta Lake, head over to [delta.io](https:
 
 2. After you've completed the `streaming-first-steps.ipynb`, then move onto part-2. [101-dl-streaming.ipynb](./101-dl-streaming.ipynb). We will pick up where we left off and run our first streaming aggregation job.
 
+
 > Note: This is continous work in progress. Please open up an [Issue](https://github.com/newfront/hitchhikers_guide_to_deltalake_streaming/issues) if you find things that seem out of place. Just be nice.
+
+## Trouble Shooting
+> tips and tricks: tbd
