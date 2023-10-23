@@ -2,23 +2,26 @@ version: "3"
 
 services:
   deltalake:
-    image: deltaio/delta-docker:latest
-    platform: linux/amd64
+    image: newfrontdocker/delta-docker:3.0.0
+    platform: linux/arm64
     hostname: dl-hitchhikers_guide
     container_name: dl-hitchhikers_guide
     environment:
       - SPARK_LOCAL_HOSTNAME=localhost
+      - PYSPARK_TOTAL_CORES=${PYSPARK_TOTAL_CORES:-4}
+      - PYSPARK_DRIVER_MEMORY=${PYSPARK_DRIVER_MEMORY:-8g}
     volumes:
       - ${PWD}:/opt/spark/work-dir/hitchhikers_guide
+      - ./startup.sh:/opt/spark/work-dir/startup.sh
     ports:
       - 8888-8889:8888-8889
       - 4040:4040
     deploy:
       resources:
         limits:
-          cpus: '4'
-          memory: 16G
+          cpus: '8'
+          memory: 32G
         reservations:
-          cpus: '1'
+          cpus: '2'
           memory: 4G
-    restart: always
+    restart: unless-stopped
