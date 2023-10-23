@@ -9,15 +9,25 @@ Take a look at the outline provided in [/hitchhikers_guide/README.md](./hitchhik
 
 
 ## Getting up and Running
-> Note: For x86_64 (linux/amd64) use the default docker-compose.yaml
+> Note: For x86_64 (linux/amd64) or (linux/arm64) use the common docker-compose.yaml
+> Docker Image: This is using the `newfrontdocker/delta-docker:3.0.0` image. This will be replaced with the official `delta-docker` image after https://github.com/delta-io/delta-docs/pull/60 is merged and the image is pushed.
 ~~~
 cd hitchhikers_guide && docker compose up
 ~~~
 
-> Note: For Apple Silicon or (linux/arm64) use the following
-~~~
-cd hitchhikers_guide && docker compose -f docker-compose-arm64.yaml up
-~~~
+> Note: The `docker-compose.yaml` includes settings to clamp the amount of local resources available for data processing (upper limit: 4 cpu cores, 16GB ram). If you want to increase the number of cores to reflect your laptop,desktop,server then remember to save at least 1 cpu core and at least 1GB ram for the root OS.
+
+```
+deploy:
+    resources:
+        limits:
+            cpus: '4'
+            memory: 16G
+        reservations:
+            cpus: '1'
+            memory: 4G
+```
+
 
 Then head into the Jupyter Lab environment and start exploring.
 

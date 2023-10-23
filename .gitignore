@@ -12,3 +12,5 @@ hitchhikers_guide/datasets/ecomm_behavior_data/delta/ecomm
 
 # ignore the application directory since it is for application checkpoints
 hitchhikers_guide/applications/*
+
+hitchhikers_guide/warehouse/*
