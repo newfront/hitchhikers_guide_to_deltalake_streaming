@@ -2,8 +2,8 @@ version: "3"
 
 services:
   deltalake:
-    image: deltaio/delta-docker:latest
-    platform: linux/amd64
+    image: delta_quickstart_310_arm64
+    platform: linux/arm64
     hostname: dl-hitchhikers_guide
     container_name: dl-hitchhikers_guide
     environment:
