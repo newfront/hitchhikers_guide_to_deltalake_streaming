@@ -21,7 +21,7 @@ include:
 * Showing empathy towards other community members
 
 Examples of unacceptable behavior by participants include:
-shipit
+
 * The use of sexualized language or imagery and unwelcome sexual attention or
  advances
 * Trolling, insulting/derogatory comments, and personal or political attacks
