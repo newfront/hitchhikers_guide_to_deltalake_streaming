@@ -1,7 +1,9 @@
+version: "3"
+
 services:
   deltalake:
     image: newfrontdocker/delta-docker:3.2.0
-    platform: linux/amd64
+    platform: linux/arm64
     hostname: dl-hitchhikers_guide
     container_name: dl-hitchhikers_guide
     environment:
