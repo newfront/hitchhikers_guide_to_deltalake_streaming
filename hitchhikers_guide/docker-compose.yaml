@@ -1,8 +1,6 @@
-version: "3"
-
 services:
   deltalake:
-    image: deltaio/delta-docker:latest
+    image: newfrontdocker/delta-docker:3.2.0
     platform: linux/amd64
     hostname: dl-hitchhikers_guide
     container_name: dl-hitchhikers_guide

@@ -1,9 +1,8 @@
 #!/bin/bash
-source "$HOME/.cargo/env"
 
 export PYSPARK_DRIVER_PYTHON=jupyter
 export PYSPARK_DRIVER_PYTHON_OPTS='lab --ip=0.0.0.0'
-export DELTA_SPARK_VERSION='3.0.0'
+export DELTA_SPARK_VERSION='3.2.0'
 export DELTA_PACKAGE_VERSION=delta-spark_2.12:${DELTA_SPARK_VERSION}
 
 echo "SparkSession:initalizing: cores:${PYSPARK_TOTAL_CORES}, memory:${PYSPARK_DRIVER_MEMORY}"
