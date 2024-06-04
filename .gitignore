@@ -16,3 +16,9 @@ hitchhikers_guide/datasets/ecomm_behavior_data/delta/ecomm
 hitchhikers_guide/applications/*
 
 hitchhikers_guide/warehouse/*
+
+# ignore the parquet directory since it is generated when the code is run
+hitchhikers_guide/datasets/ecomm_behavior_data/parquet/
+
+.idea
+
