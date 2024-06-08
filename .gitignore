@@ -3,6 +3,7 @@ metastore_db/
 spark-warehouse/
 derby.log
 .DS_Store
+.ipynb_checkpoints/
 
 *.idea/
 
