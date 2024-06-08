@@ -38,3 +38,8 @@ linux
 ```
 cat /proc/cpuinfo
 ```
+
+## Using Kafka on the Docker Network
+~~~
+docker network create dais
+~~~
