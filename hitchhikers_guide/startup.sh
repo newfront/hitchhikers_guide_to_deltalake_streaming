@@ -8,7 +8,7 @@ export DELTA_PACKAGE_VERSION=delta-spark_2.12:${DELTA_SPARK_VERSION}
 echo "SparkSession:initalizing: cores:${PYSPARK_TOTAL_CORES}, memory:${PYSPARK_DRIVER_MEMORY}"
 
 $SPARK_HOME/bin/pyspark \
-  --packages io.delta:${DELTA_PACKAGE_VERSION},org.apache.spark:spark-sql-kafka-0-10_2.12:${DELTA_SPARK_VERSION} \
+  --packages io.delta:${DELTA_PACKAGE_VERSION},org.apache.spark:spark-sql-kafka-0-10_2.12:${DELTA_SPARK_VERSION},org.apache.spark:spark-protobuf_2.12:3.5.1 \
   --driver-memory ${PYSPARK_DRIVER_MEMORY} \
   --driver-cores ${PYSPARK_TOTAL_CORES} \
   --conf "spark.sql.warehouse.dir=/opt/spark/work-dir/hitchhikers_guide/warehouse" \
