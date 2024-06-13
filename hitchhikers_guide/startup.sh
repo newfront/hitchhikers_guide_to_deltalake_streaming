@@ -5,6 +5,8 @@ export PYSPARK_DRIVER_PYTHON_OPTS='lab --ip=0.0.0.0'
 export DELTA_SPARK_VERSION='3.2.0'
 export DELTA_PACKAGE_VERSION=delta-spark_2.12:${DELTA_SPARK_VERSION}
 
+# export PYTHONPATH="${PYTHONPATH}:/tmp/"
+
 echo "SparkSession:initalizing: cores:${PYSPARK_TOTAL_CORES}, memory:${PYSPARK_DRIVER_MEMORY}"
 
 $SPARK_HOME/bin/pyspark \
