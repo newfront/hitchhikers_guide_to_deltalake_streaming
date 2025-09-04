@@ -2,15 +2,13 @@
 
 export PYSPARK_DRIVER_PYTHON=jupyter
 export PYSPARK_DRIVER_PYTHON_OPTS='lab --ip=0.0.0.0'
-export DELTA_SPARK_VERSION='3.2.0'
-export DELTA_PACKAGE_VERSION=delta-spark_2.12:${DELTA_SPARK_VERSION}
-
-# export PYTHONPATH="${PYTHONPATH}:/tmp/"
+export DELTA_SPARK_VERSION='4.0.0'
+export DELTA_PACKAGE_VERSION=delta-spark_2.13:${DELTA_SPARK_VERSION}
 
 echo "SparkSession:initalizing: cores:${PYSPARK_TOTAL_CORES}, memory:${PYSPARK_DRIVER_MEMORY}"
 
 $SPARK_HOME/bin/pyspark \
-  --packages io.delta:${DELTA_PACKAGE_VERSION},org.apache.spark:spark-sql-kafka-0-10_2.12:${DELTA_SPARK_VERSION},org.apache.spark:spark-protobuf_2.12:3.5.1 \
+  --packages io.delta:${DELTA_PACKAGE_VERSION},org.apache.spark:spark-sql-kafka-0-10_2.13:${DELTA_SPARK_VERSION},org.apache.spark:spark-protobuf_2.13:4.0.0 \
   --driver-memory ${PYSPARK_DRIVER_MEMORY} \
   --driver-cores ${PYSPARK_TOTAL_CORES} \
   --conf "spark.sql.warehouse.dir=/opt/spark/work-dir/hitchhikers_guide/warehouse" \
