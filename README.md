@@ -10,7 +10,7 @@ Take a look at the outline provided in [/hitchhikers_guide/README.md](./hitchhik
 
 ## Getting up and Running
 > Note: For x86_64 (linux/amd64) or (linux/arm64) use the common docker-compose.yaml
-> Docker Image: This is using the `newfrontdocker/delta-docker:3.0.0` image. This will be replaced with the official `delta-docker` image after https://github.com/delta-io/delta-docs/pull/60 is merged and the image is pushed.
+> Docker Image: This is using the `newfrontdocker/delta-docker:4.0.0` image. This will be replaced with the official `delta-docker` image after https://github.com/delta-io/delta-docker/pull/17 is merged and the image is pushed.
 ~~~
 cd hitchhikers_guide && docker compose up
 ~~~
