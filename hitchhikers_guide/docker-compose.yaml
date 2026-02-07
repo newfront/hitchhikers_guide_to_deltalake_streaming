@@ -1,6 +1,6 @@
 services:
   deltalake:
-    image: newfrontdocker/delta-docker:4.0.0
+    image: deltaio/delta-docker:4.0.1
     hostname: dl-hitchhikers_guide
     container_name: dl-hitchhikers_guide
     environment:
